@@ -33,7 +33,16 @@ public class BoolFunction
     {
         int j = getInteger();
 
-        System.out.printf("Input = %d, output = %d.\n", j, (j>0)*j + (j<0)*(-j)); // TASK 3.3 (b)
+        int output;
+
+        if (j > 0){
+            output = j;
+        } else{
+            output = -j;
+        }
+
+        //System.out.printf("Input = %d, output = %d.\n", j, (j>0)*j + (j<0)*(-j)); // TASK 3.3 (b)
+        System.out.println("Input = " + j + " output = " + output);
 
     }
 }
